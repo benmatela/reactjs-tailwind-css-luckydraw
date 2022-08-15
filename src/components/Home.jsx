@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import HowItWorks from './HowItWorks';
 import Welcome from './Welcome';
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
        <Welcome />
        <HowItWorks />
+       <Footer />
     </div>
   )
 }
