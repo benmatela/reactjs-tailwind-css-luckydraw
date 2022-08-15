@@ -1,5 +1,5 @@
 import React from 'react'
-import cards from '../assets/cards.svg'
+import CardsImg from '../assets/cards.svg'
 
 function HowItWorks() {
   return (
@@ -9,7 +9,7 @@ function HowItWorks() {
                 <p className='font-bold text-[#00df9a]'>HOW IT WORKS:</p>
                 <p className='font-medium text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit voluptate cupiditate explicabo illum, veritatis ipsa excepturi magnam non aliquam soluta itaque debitis, eos accusantium ullam fugiat quibusdam eligendi. Praesentium, quo?</p>
             </div>
-            <img src={cards} alt="cards" className='w-[500px] mx-auto my-4'/>
+            <img src={CardsImg} alt="cards" className='w-[500px] mx-auto my-4'/>
         </div>
     </div>
   )
