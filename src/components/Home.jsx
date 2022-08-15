@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import HowItWorks from './HowItWorks';
+import Welcome from './Welcome';
 
 const Home = () => {
   return (
-    <div className='text-white'>
-        
+    <div>
+       <Welcome />
+       <HowItWorks />
     </div>
   )
 }
