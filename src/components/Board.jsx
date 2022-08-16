@@ -12,7 +12,9 @@ function Board() {
       <p className="font-medium mx-auto text-white">
         Boxes will be popped if they match your draw
       </p>
-      <Card drawnNumbers={drawnNumbers} />
+      <div className="mx-auto grid md:grid-cols-4">
+        <Card drawnNumbers={drawnNumbers} />
+      </div>
     </div>
   );
 }
