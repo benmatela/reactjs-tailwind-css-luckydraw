@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 
-function Spin() {
+function Spin({handleDrawClick}) {
   const [generatedNumber, setGeneratedNumber] = useState(0);
-
+  
   const generatedRandomNumber = (min, max) => {
     return Math.round(min + Math.random() * (max - min));
   };
 
   const handleGenerateRandom = () => {
-    setGeneratedNumber(generatedRandomNumber(1, 50));
+    const random = generatedRandomNumber(1, 50);
+    setGeneratedNumber(random);
+    handleDrawClick(random);
   };
 
   return (
