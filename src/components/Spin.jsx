@@ -16,8 +16,8 @@ function Spin({handleDrawClick}) {
   return (
     <div className="w-full bg-black">
       <div className="flex flex-col justify-center mx-auto">
-        <p className="font-bold mx-auto mt-2 text-white">
-          HIT THE SPIN BUTTON TO GET STARTED!
+        <p className="font-medium mx-auto mt-2 text-white">
+          Hit the 'Spin!' button to get started..
         </p>
         <h1 className="mx-auto text-white md:text-4xl sm:text-3xl text-2xl font-bold">
           {generatedNumber}
