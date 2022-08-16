@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="w-full bg-white text-[#000300] py-16 px-4 ">

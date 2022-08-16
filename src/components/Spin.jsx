@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
-function Spin({handleDrawClick}) {
+const Spin = ({ handleDrawClick }) => {
   const [generatedNumber, setGeneratedNumber] = useState(0);
-  
+
   const generatedRandomNumber = (min, max) => {
     return Math.round(min + Math.random() * (max - min));
   };
 
   const handleGenerateRandom = () => {
     const random = generatedRandomNumber(1, 50);
-    setGeneratedNumber(random);
     handleDrawClick(random);
+    setGeneratedNumber(random);
   };
 
   return (
@@ -24,10 +24,12 @@ function Spin({handleDrawClick}) {
         </h1>
         <button
           className="py-3 my-6 bg-[#00df9a] text-[#000300] w-[200px] rounded-md font-medium mx-auto"
-          onClick={handleGenerateRandom}
-        >
+          onClick={handleGenerateRandom}>
           Spin!
         </button>
+        <p className="font-medium mx-auto mt-2 text-white">
+          Boxes will be popped if they match your draw
+        </p>
       </div>
     </div>
   );

@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import Card from "./Card";
 import Spin from "./Spin";
 
-function Play() {
-  const [draw, setDraw] = useState(0);
-
+const Play = () => {
   const findRange = (start, end) => {
     return Array(end - start + 1).fill().map((_, idx) => start + idx);
   };
+  const [cards, setCards] = useState(findRange(1, 50));
 
-  const cards = findRange(1, 50);
-
-  const handleDrawClick = (num) => {
-    setDraw(num);
+  const handleDrawClick = (randomNumber) => {
+    setCards((current) =>
+      current.filter((num) => {
+        return num !== randomNumber;
+      })
+    );
   };
 
   return (
@@ -21,10 +22,7 @@ function Play() {
         <div className="flex justify-center">
           <Spin handleDrawClick={handleDrawClick} />
         </div>
-        <div>
-          <p className="font-medium mx-auto mt-2 text-white">
-            Boxes will be popped if they match your draw
-          </p>
+        <div id="cardsContainer">
           <div className="mx-auto grid md:grid-cols-4">
             <Card cards={cards} />
           </div>

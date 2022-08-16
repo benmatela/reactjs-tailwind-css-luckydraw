@@ -2,7 +2,7 @@ import React from "react";
 import CardsImg from "../assets/cards.svg";
 import { Link } from "react-router-dom";
 
-function HowItWorks() {
+const HowItWorks = () => {
   return (
     <div className="w-full bg-black py-16 px-4">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
