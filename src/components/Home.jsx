@@ -6,11 +6,11 @@ import Welcome from './Welcome';
 const Home = () => {
   return (
     <div>
-       <Welcome />
-       <HowItWorks />
-       <Footer />
+      <Welcome />
+      <HowItWorks />
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default Home

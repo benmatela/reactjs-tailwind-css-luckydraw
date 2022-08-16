@@ -1,21 +1,18 @@
-import React, { useState } from 'react'
-import Board from './Board';
-import Spin from './Spin';
+import React from "react";
+import Board from "./Board";
+import Spin from "./Spin";
 
 function Play() {
-    const findRange = (start, end) => {
-        return Array(end - start + 1).fill().map((_, idx) => start + idx)
-    }
-
-    const [drawnNumbers, setDrawnNumbers] = useState(findRange(1, 50));
-
   return (
-    <div className='text-white'>
-        <Spin />
+    <div className="w-full bg-black px-4 text-white">
+      <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+        <div className="flex justify-center">
+          <Spin />
+        </div>
         <Board />
-        {drawnNumbers}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Play
+export default Play;
