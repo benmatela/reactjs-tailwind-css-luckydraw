@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
-      <h1 className="w-full text-3xl font-bold text-[#00df9a]">Lucky Draw</h1>
+      <h1 className="w-full text-3xl font-bold text-[#00df9a]">🎰 Lucky Draw</h1>
       <ul className="hidden md:flex">
         <li className="p-4">
           <Link to="/">Home</Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }>
         <h1 className="w-full text-3xl font-bold text-[#00df9a] mt-8 ml-2">
-          Lucky Draw
+        🎰 Lucky Draw
         </h1>
         <ul className="pt-18 uppercase">
           <li className="p-4 border-b border-gray-600">
