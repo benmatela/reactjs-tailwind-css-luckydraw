@@ -22,13 +22,13 @@ const Play = () => {
   return (
     <div className="w-full bg-black px-4 text-white">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-        <div className="flex justify-center">
+        <div className="flex">
           <Spin handleDrawClick={handleDrawClick}  />
         </div>
         <div id="cardsContainer">
           {cards.length === 0 ? (
-            <div id="gameOver" className="flex flex-col justify-center mx-auto">
-              <h1 className="mx-auto justify-center font-bold text-white">
+            <div id="gameOver" className="flex flex-col mx-auto">
+              <h1 className="mx-auto font-bold text-white">
                 Congradulations! You won!
               </h1>
               <img
