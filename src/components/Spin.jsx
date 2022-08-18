@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Spin = ({ handleDrawClick }) => {
+export const Spin = ({ handleDrawClick }) => {
   const [generatedNumber, setGeneratedNumber] = useState(0);
   const [attempts, setAttempts] = useState(0);
 
@@ -41,5 +41,3 @@ const Spin = ({ handleDrawClick }) => {
     </div>
   );
 };
-
-export default Spin;

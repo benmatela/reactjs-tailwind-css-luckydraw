@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from './Footer';
-import HowItWorks from './HowItWorks';
-import Welcome from './Welcome';
+import { Footer } from './Footer';
+import { HowItWorks } from './HowItWorks';
+import { Welcome } from './Welcome';
 
-const Home = () => {
+export const Home = () => {
   return (
     <div>
       <Welcome />
@@ -12,5 +12,3 @@ const Home = () => {
     </div>
   );
 }
-
-export default Home

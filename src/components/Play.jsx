@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Card from "./Card";
-import Spin from "./Spin";
+import { Card } from "./Card";
+import { Spin } from "./Spin";
 import CelebrateImg from "../assets/celebrate.svg";
 
-const Play = () => {
+export const Play = () => {
   const findRange = (start, end) => {
     return Array(end - start + 1)
       .fill()
@@ -33,7 +33,7 @@ const Play = () => {
               </h1>
               <img
                 src={CelebrateImg}
-                alt="cards"
+                alt="Celebrate"
                 className="w-[900px] mx-auto my-4"/>
             </div>
           ) : (
@@ -46,5 +46,3 @@ const Play = () => {
     </div>
   );
 };
-
-export default Play;

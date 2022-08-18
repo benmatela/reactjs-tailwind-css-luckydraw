@@ -2,7 +2,7 @@ import React from "react";
 import PiggyBankImg from "../assets/piggybank.svg";
 import { Link } from "react-router-dom";
 
-function Welcome() {
+export const Welcome = () => {
   return (
     <div className="w-full bg-white py-16 px-4">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
@@ -30,5 +30,3 @@ function Welcome() {
     </div>
   );
 }
-
-export default Welcome;

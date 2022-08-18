@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = (props) => {
+export const Card = (props) => {
   return props.cards.map((num, i) => {
     return (
       <div
@@ -11,5 +11,3 @@ const Card = (props) => {
     );
   });
 };
-
-export default Card;
